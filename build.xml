@@ -1,5 +1,11 @@
 <project name="CmBuildFile" default="default">
+  <property environment="env"/>
+
   <target name="default">
     <echo>Hello world</echo>
+    <echo>${env.ANT_HOME}</echo>
+    <exec executable="ls">
+      <arg line="${env.ANT_HOME}/../userContent"/>
+    </exec>
   </target>
 </project>
