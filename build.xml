@@ -1,0 +1,5 @@
+<project name="CmBuildFile" default="default">
+  <target name="default">
+    <echo>Hello world</echo>
+  </target>
+</project>
